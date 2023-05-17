@@ -1,12 +1,20 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-<p>This is anirban</p>
+<script>
+    import Todo from "../components/Todo.svelte";
+</script>
+
+<h1>Welcome to My Todo App</h1>
+<Todo />
 
 <style>
-h1,p {
+    h1 {
+        margin: auto;
+        width: 60%;
+        border: 3px;
+        padding: 80px 0;
+        text-align: center;
+    }
 
-    text-align: center;
-    margin: 4rem auto;   
-    
-}
+    :global(body) {
+        background-color: blanchedalmond;
+    }
 </style>
