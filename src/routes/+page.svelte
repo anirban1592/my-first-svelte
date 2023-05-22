@@ -15,6 +15,6 @@
     }
 
     :global(body) {
-        background-color: blanchedalmond;
+        background-color: cadetblue;
     }
 </style>

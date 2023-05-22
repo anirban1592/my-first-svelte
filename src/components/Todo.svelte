@@ -16,13 +16,14 @@
     <input type="text" bind:value={todo} />
     <button on:click={handleAdd}>Add todo</button>
 </div>
-
-<div class="todo-list">
-    <ul>
-        {#each todos as todo}
-            <li>{todo}</li>
-        {/each}
-    </ul>
+<div class="container">
+    <div class="todo-list">
+        <ul>
+            {#each todos as todo}
+                <li>{todo}</li>
+            {/each}
+        </ul>
+    </div>
 </div>
 
 <style>
@@ -52,16 +53,17 @@
         justify-content: center;
     }
     .todo-list li {
-        list-style-type: square;
-        font-size: 30px;
-        border: 3px;
-        max-width: 750px;
-        margin-left: 750px;
-        background-color: blanchedalmond;
-        padding: 15px;
-        transition: font-size 200ms;
+        font-size: 40px;
     }
-
+    .container ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: self-start;
+        width: 500px;
+        height: 500px;
+        margin-left: 650px;
+        max-width: 500px;
+    }
     li:hover {
         font-size: 40px;
     }
